@@ -9,10 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-/**
- * Test pentru formularul Student Registration pe demoqa.com.
- * Suporta rulare locala si remote (Selenoid + video recording).
- */
+
 @Epic("DemoQA Practice Form")
 @Feature("Student Registration Form")
 public class FormTest {
@@ -22,13 +19,13 @@ public class FormTest {
 
     // ── Date de test ──────────────────────────────────────────────────────────
     private static final String URL        = "https://demoqa.com/";
-    private static final String FIRST_NAME = "Dorel";
-    private static final String LAST_NAME  = "Russu";
-    private static final String EMAIL      = "dorelrussup2212@gmail.com";
-    private static final String GENDER     = "Male";
+    private static final String FIRST_NAME = "Andreea";
+    private static final String LAST_NAME  = "Chiseliov";
+    private static final String EMAIL      = "chiseliovandreea522@gmail.com";
+    private static final String GENDER     = "Female";
     private static final String SUBJECT    = "Maths";
-    private static final String PHONE      = "0797413251";
-    private static final String DATE       = "23 Aug 2006";
+    private static final String PHONE      = "0609750000";
+    private static final String DATE       = "09 December 2005";
     private static final String HOBBY      = "Music";
     private static final String STATE      = "Rajasthan";
     private static final String CITY       = "Jaipur";
@@ -37,7 +34,7 @@ public class FormTest {
     @Step("Setup: initializeaza browser-ul")
     public void beforeMethod() {
         logger.info("=== BEFORE METHOD: pornire driver ===");
-        driver = Driver.getDriver();
+        driver = Driver.getRemoteDriver();
         driver.manage().window().maximize();
         logger.info("Driver pornit: {}", driver.getClass().getSimpleName());
     }
