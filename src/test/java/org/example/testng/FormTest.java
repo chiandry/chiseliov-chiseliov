@@ -25,7 +25,7 @@ public class FormTest {
     private static final String GENDER     = "Female";
     private static final String SUBJECT    = "Maths";
     private static final String PHONE      = "0609750000";
-    private static final String DATE       = "09 December 2005";
+    private static final String DATE       = "09 Dec 2005";
     private static final String HOBBY      = "Music";
     private static final String STATE      = "Rajasthan";
     private static final String CITY       = "Jaipur";
